@@ -91,15 +91,6 @@ public class nameArr {
                 System.out.println("all of the array is not over 100");
             }
         } 
-               
-	
-
-        //for(int c = 0; c < equal.length; ++c){
-          //  if (equal[c] < 100){ 
-            //System.out.println ("all of the array is not over 100" );
-            //}
-       // }
-        
     }
     static void averageDouble(double[] average2){
         int ave = 0;
