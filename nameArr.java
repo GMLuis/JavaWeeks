@@ -43,10 +43,8 @@ public class nameArr {
         averageBetween(average2, average3);
         willBuyDrink(isHotOutside, moneyInPocket);
         goOutTonight(time, doIWork, wallet);
-        
-    
     }
-    static void nameLengths(String[] names){
+    public static void nameLengths(String[] names){
         for (int i = 0; i < names.length; i++) {
             char[] eachLetter = names[i].toCharArray();
             int count = 0;
@@ -58,7 +56,7 @@ public class nameArr {
             System.out.println(count + names.length);
         }   
     }
-    static void nameLengths2(String[] nameLengths){
+    public static void nameLengths2(String[] nameLengths){
         int countLetters2 = 0;
         for (String v : nameLengths){
             countLetters2 += v.length();
@@ -74,16 +72,13 @@ public class nameArr {
             System.out.println(count2 + countLetters2);
         }         
     }     
-    static void combineWords(int n, String word){
+    public static void combineWords(int n, String word){
        System.out.println(word.repeat(n)); 
     }
-    static void fullName1(String firstName,String lastName){
+    public static void fullName1(String firstName,String lastName){
         System.out.println(firstName + " " + lastName);
-
     }
-    static void equal100(int[] equal){
-        
-
+    public static void equal100(int[] equal){
         for(int equals: equal) {
             if(equals >= 100) {
                 System.out.println("all of the array is over 100");
@@ -91,17 +86,8 @@ public class nameArr {
                 System.out.println("all of the array is not over 100");
             }
         } 
-               
-	
-
-        //for(int c = 0; c < equal.length; ++c){
-          //  if (equal[c] < 100){ 
-            //System.out.println ("all of the array is not over 100" );
-            //}
-       // }
-        
     }
-    static void averageDouble(double[] average2){
+    public static void averageDouble(double[] average2){
         int ave = 0;
         int total1 = 0;
         while (total1 < average2.length) {
@@ -111,7 +97,7 @@ public class nameArr {
         int average1= ave/average2.length;
         System.out.println("Average : " + average1);   
     }
-    static void averageBetween(double[] average2, double[] average3){
+    public static void averageBetween(double[] average2, double[] average3){
         int ave = 0;
         int total1 = 0;
         while (total1 < average2.length) {
@@ -130,17 +116,16 @@ public class nameArr {
             System.out.println("The average of the first array is greater.");
         } else if(average1 < average0){
             System.out.println("The average of the second array is greater.");
-        }
-        
+        }  
     }
-    static void willBuyDrink(boolean isHotOutside, double moneyInPocket){
+    public static void willBuyDrink(boolean isHotOutside, double moneyInPocket){
         if((isHotOutside = true) && (moneyInPocket > 10.50)){
             System.out.println("You can buy a drink");
         }else{
             System.out.println("You can not buy a drink");
         }
     }
-    static void goOutTonight(int time, boolean doIWork, int wallet){
+    public static void goOutTonight(int time, boolean doIWork, int wallet){
         if(time < 10 && doIWork == false && wallet > 100) {
             System.out.println("Go out and have fun tonight.");
         } else if(time < 10 && doIWork == false && wallet < 100){
@@ -149,5 +134,4 @@ public class nameArr {
             System.out.println("It is too late to go out tonight.");
         }
     }
-
 }
